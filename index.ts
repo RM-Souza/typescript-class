@@ -7,5 +7,5 @@ let counter: number = 0;
 
 let intervalId = setInterval(() => {
   counter++;
-  document.getElementById('app.counter').innerHTML = counter.toString();
+  document.getElementById('app.run').innerHTML = counter.toString();
 }, 1000);
