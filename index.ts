@@ -1,15 +1,11 @@
 // Write TypeScript code!
+
 let title: string = 'MyApp';
+document.getElementById('app.title').innerHTML = title;
 
-const appDiv: HTMLElement = document.getElementById('app');
-appDiv.innerHTML = `
-<h1>${title}</h1>
-<p>Something else</p>`;
+let counter: number = 0;
 
-console.log('Hey!');
-
-for (let i = 0; i <= 10; i++) {
-  if (i % 2 == 0) {
-    //console.log(i);
-  }
-}
+let intervalId = setInterval(() => {
+  counter++;
+  document.getElementById('app.counter').innerHTML = counter.toString();
+}, 1000);
