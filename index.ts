@@ -1,11 +1,17 @@
 // Write TypeScript code!
 
 let title: string = 'MyApp';
-document.getElementById('app.title').innerHTML = title;
+let run: string = '0';
+let stopped: string = '0';
 
-let counter: number = 0;
+document.getElementById('app.title').innerHTML = title;
+document.getElementById('app.run').innerHTML = run;
+document.getElementById('app.stop').innerHTML = stopped;
+
+let counterRun: number = 0;
+let counterStop: number = 0;
 
 let intervalId = setInterval(() => {
-  counter++;
-  document.getElementById('app.run').innerHTML = counter.toString();
+  counterRun++;
+  document.getElementById('app.run').innerHTML = counterRun.toString();
 }, 1000);
