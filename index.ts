@@ -26,6 +26,9 @@ let intervalId = setInterval(() => {
     if (counterStop == 3) {
       counterStop--;
       document.getElementById('app.stop').innerHTML = '0';
+
+      counterRun = 0;
+      document.getElementById('app.run').innerHTML = counterRun.toString();
     }
-}
+  }
 }, 1000);
