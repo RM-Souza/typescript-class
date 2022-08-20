@@ -16,7 +16,7 @@ let intervalId = setInterval(() => {
 
   document.getElementById('app.run').innerHTML = counterRun.toString();
 
-  if (counterRun == 4) {
+  if (counterRun == 5) {
     counterRun--;
     document.getElementById('app.run').innerHTML = '0';
 
@@ -25,7 +25,7 @@ let intervalId = setInterval(() => {
 
     if (counterStop == 3) {
       counterStop--;
-      document.getElementById('app.run').innerHTML = '0';
+      document.getElementById('app.stop').innerHTML = '0';
     }
-  }
+}
 }, 1000);
