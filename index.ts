@@ -13,5 +13,19 @@ let counterStop: number = 0;
 
 let intervalId = setInterval(() => {
   counterRun++;
+
   document.getElementById('app.run').innerHTML = counterRun.toString();
+
+  if (counterRun == 4) {
+    counterRun--;
+    document.getElementById('app.run').innerHTML = '0';
+
+    counterStop++;
+    document.getElementById('app.stop').innerHTML = counterStop.toString();
+
+    if (counterStop == 3) {
+      counterStop--;
+      document.getElementById('app.run').innerHTML = '0';
+    }
+  }
 }, 1000);
